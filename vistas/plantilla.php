@@ -49,7 +49,7 @@
  <script src="vistas/dist/js/adminlte.min.js"></script>
 
  
- <!--====  CUEPO DEL DOCUMENTO  ====-->
+ <!--====  CUEPO DEL DOCUMENTO nuevo prueba  ====-->
 
 </head>
 <body class="hold-transition skin-blue sidebar-collapse sidebar-mini">
