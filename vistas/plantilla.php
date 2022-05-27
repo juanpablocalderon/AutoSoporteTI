@@ -58,7 +58,24 @@
 
   <?php
 
-    include"modulos/cabezote.php";
+  /*================================
+  =          CABEZOTE            =
+  ================================*/   
+  
+      include"modulos/cabezote.php";
+
+  /*================================
+  =          MENU         =
+  ================================*/
+
+    include"modulos/menu.php";
+
+    /*================================
+  =          CONTENIDO         =
+  ================================*/
+
+    include"modulos/contenido.php";
+
 
   ?>
  
