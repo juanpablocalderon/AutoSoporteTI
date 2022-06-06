@@ -7,9 +7,9 @@
 
 			<li class="active"> 
 
-				<a href="">
+				<a href="inicio">
 
-					<i class="fa fa-home"></i>
+					<i class="fa-solid fa-house-user"></i>
 					<span>Inicio</span>
 
 				</a
@@ -18,19 +18,18 @@
 
 
 			<li>
-				<a href="">
-
-					<i class="fa fa-users"></i>
-					<span>Usuarios</span>
+				<a href="cliente">
+					<i class="fa-solid fa-address-card"></i>
+					<span>Clientes</span>
 				</a	
 			</li>
 
 			
 			<li>			
-				<a href="">
+				<a href="caso">
 
-					<i class="fa fa-th"></i>
-					<span>Categorias</span>
+					<i class="fa-solid fa-suitcase"></i>				
+					<span>Caso</span>
 
 				</a
 			
@@ -38,38 +37,48 @@
 
 
 			<li>			
-				<a href="">
-
-					<i class="fa fa-product-hunt"></i>
-					<span>Productos</span>
+				<a href="revisar">
+					<i class="fa-solid fa-gears"></i>
+					<span>Revisar</span>
 
 				</a
 			
 			</li> 
 
-			<li class="treeview">
+			<li>			
+				<a href="tecnico">
 
+
+					<i class="fa-solid fa-user-gear"></i>
+					<span>Tecnico</span>
+
+				</a
 			
-				<a href="">
+			</li> 
 
-					<i class="fa-solid fa-list"></i>				
-					<span>Ventas</span>
+			</li> 
 
-					<span class="pull-rigth-container">
-					
+			<li>			
+				<a href="usuario">
+					<i class="fa-solid fa-user"></i>
+					<span>Usuario</span>
+
+				</a
+			
+			</li> 
+
+			<li>			
+				<a href="factura">
+
+					<i class="fa-solid fa-file-invoice-dollar"></i>
+					<span>Factura</span>								
 					<i class="fa fa-angle-left pull-right"></i>
 
-					</span>
-
 				</a
 			
 			</li> 
 
-
-
-
-			
-		</ul>
+	</ul>
 		
 	</section>
 

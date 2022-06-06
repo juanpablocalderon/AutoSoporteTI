@@ -48,6 +48,9 @@
  <!-- AdminLTE App -->
  <script src="vistas/dist/js/adminlte.min.js"></script>
 
+ <!-- Fontawesome -->
+ <script src="https://kit.fontawesome.com/5cd8bf78dd.js" crossorigin="anonymous"></script>
+
  
  <!--====  CUEPO DEL DOCUMENTO   ====-->
 
@@ -70,13 +73,19 @@
 
     include"modulos/menu.php";
 
-    /*================================
+  /*================================
   =          CONTENIDO         =
   ================================*/
 
     include"modulos/contenido.php";
 
+  /*================================
+  =          footer       =
+  ================================*/
 
+    include"modulos/footer.php";
+
+    
   ?>
  
 

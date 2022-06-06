@@ -1,6 +1,11 @@
 <footer class="main-footer">
 
-	<strong> &copy; 2022 <a href="http://oferta.senasofiaplus.edu.co/sofia-oferta/" target="blank">ADSI</a>.
+	<strong>Copyrigth &copy; 2022 
+
+		<a 
+			href="http://oferta.senasofiaplus.edu.co/sofia-oferta/" target="_blank"> Analisis y Desarrollo De Sistemas De Informacion
+
+		</a>.
 		
 
 	</strong>
