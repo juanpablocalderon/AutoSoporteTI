@@ -4,7 +4,7 @@
   =            LOGOTIPO            =
   ============================================-->
 
-<a href="" class="logo">
+<a href="inicio.php" class="logo">
 
 	<!-- logo mini -->
 

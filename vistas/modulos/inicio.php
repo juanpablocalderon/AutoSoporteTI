@@ -3,12 +3,13 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Caso
-        <small>Caso</small>
+        Inicio
+        <small>Panel De Control</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Caso</li>
+        <li><a href="#">Examples</a></li>
+        <li class="active">Blank page</li>
       </ol>
     </section>
 

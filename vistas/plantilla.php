@@ -74,10 +74,27 @@
     include"modulos/menu.php";
 
   /*================================
-  =          CONTENIDO         =
+  =          INICIO       =
   ================================*/
+  if(isset($_GET['ruta'])){
+    if($_GET['ruta'] == "inicio" ||
+       $_GET['ruta'] == "cliente" ||
+       $_GET['ruta'] == "caso" ||
+       $_GET['ruta'] == "revisar" ||
+       $_GET['ruta'] == "tecnico" ||
+       $_GET['ruta'] == "usuario" ||
+       $_GET['ruta'] == "factura"  ) {
 
-    include"modulos/contenido.php";
+      include"modulos/".$_GET['ruta'].".php";
+
+
+
+
+    }
+  }
+
+
+    
 
   /*================================
   =          footer       =
