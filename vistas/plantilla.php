@@ -6,6 +6,8 @@
   <title>AutoSoporteTI</title>
   <!-- Tell the browser to be responsive to screen width -->
 
+  <link rel="icon" href="vistas/img/plantilla/logo_sencillo.png">
+
     <!--===========================================
   =            PRLUGINS DE CSS            =
   ============================================-->
@@ -55,11 +57,16 @@
  <!--====  CUEPO DEL DOCUMENTO   ====-->
 
 </head>
-<body class="hold-transition skin-blue sidebar-collapse sidebar-mini">
-<!-- Site wrapper -->
-<div class="wrapper">
+<body class="hold-transition skin-blue sidebar-collapse sidebar-mini login-page">
+
+
+
 
   <?php
+
+  if(isset($_SESSION["iniciarsesion"]) && $_SESSION["iniciarsesion"] == "ok"){
+
+  echo '<div class="wraper">';
 
   /*================================
   =          CABEZOTE            =
@@ -88,13 +95,15 @@
       include"modulos/".$_GET['ruta'].".php";
 
 
+    }else{
 
-
+      include "modulos/404.php";
     }
-  }
+  } else{
 
+    include "modulos/inicio.php";
 
-    
+  }    
 
   /*================================
   =          footer       =
@@ -102,8 +111,17 @@
 
     include"modulos/footer.php";
 
+
+    echo '</div>';
+
+  } else {
+
+    include"modulos/login.php";
+
+  }
     
   ?>
+  }
  
 
  

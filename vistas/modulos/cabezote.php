@@ -4,13 +4,13 @@
   =            LOGOTIPO            =
   ============================================-->
 
-<a href="inicio.php" class="logo">
+<a href="inicio"class="logo">
 
 	<!-- logo mini -->
 
 	<span class="logo-mini">
 
-		<img src="vistas/img/plantilla/casa.png" class="img-responsive" style="padding: 10px;">
+		<img src="vistas/img/plantilla/logo_sencillo.png" class="img-responsive" style="padding: 5px;">
 		
 	</span>
 
@@ -18,7 +18,7 @@
 
 	<span class="logo-lg">
 
-		<img src="vistas/img/plantilla/logopequeño.png" class="img-responsive" style="padding: 10px 0px;">		
+		<img src="vistas/img/plantilla/logopequeño.png" class="img-responsive" style="padding: 5px 0px;">		
 	</span>
 
 	</a>
