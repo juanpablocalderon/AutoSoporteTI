@@ -59,7 +59,7 @@
 			</li> 
 
 			<li>			
-				<a href="usuario">
+				<a href="usuarios.php">
 					<i class="fa-solid fa-user"></i>
 					<span>Usuario</span>
 

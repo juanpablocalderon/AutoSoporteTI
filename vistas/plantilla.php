@@ -60,8 +60,6 @@
 <body class="hold-transition skin-blue sidebar-collapse sidebar-mini login-page">
 
 
-
-
   <?php
 
   if(isset($_SESSION["iniciarsesion"]) && $_SESSION["iniciarsesion"] == "ok"){
@@ -89,7 +87,7 @@
        $_GET['ruta'] == "caso" ||
        $_GET['ruta'] == "revisar" ||
        $_GET['ruta'] == "tecnico" ||
-       $_GET['ruta'] == "usuario" ||
+       $_GET['ruta'] == "usuarios" ||
        $_GET['ruta'] == "factura"  ) {
 
       include"modulos/".$_GET['ruta'].".php";
@@ -114,16 +112,18 @@
 
     echo '</div>';
 
-  } else {
+  } 
+
+
+  else {
 
     include"modulos/login.php";
 
   }
     
   ?>
-  }
- 
 
+  
  
 </div>
 <!-- ./wrapper -->
