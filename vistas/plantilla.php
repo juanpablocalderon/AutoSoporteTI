@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AutoSoporteTI</title>
-  <!-- Tell the browser to be responsive to screen width -->
 
-  <link rel="icon" href="vistas/img/plantilla/logo_sencillo.png">
+  <title>AutoSoporteTI</title>
+
+   <link rel="icon" href="vistas/img/plantilla/logo_sencillo.png">
 
     <!--===========================================
   =            PRLUGINS DE CSS            =
@@ -55,6 +55,7 @@
 
  
  <!--====  CUEPO DEL DOCUMENTO   ====-->
+ 
 
 </head>
 <body class="hold-transition skin-blue sidebar-collapse sidebar-mini login-page">
@@ -99,6 +100,7 @@
 
       include "modulos/404.php";
     }
+
   } else{
 
     include "modulos/inicio.php";
@@ -114,14 +116,16 @@
 
     echo '</div>';
 
-  } else {
+  } 
+
+  else {
 
     include"modulos/login.php";
 
   }
     
   ?>
-  }
+ 
  
 
  

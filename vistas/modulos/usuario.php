@@ -1,13 +1,13 @@
-<!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
+<div class="content-wrapper">
+ 
+ <section class="content-header">
+
+    <h1>
         Usuario
         <small>Usuario</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i>Usuario</a></li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
                 <li class="active">Usuario</li>
       </ol>
     </section>

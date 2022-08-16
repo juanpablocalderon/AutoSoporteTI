@@ -12,7 +12,7 @@
 					<i class="fa-solid fa-house-user"></i>
 					<span>Inicio</span>
 
-				</a
+				</a>
 			
 			</li> 
 
@@ -21,7 +21,7 @@
 				<a href="cliente">
 					<i class="fa-solid fa-address-card"></i>
 					<span>Clientes</span>
-				</a	
+				</a>	
 			</li>
 
 			
@@ -31,7 +31,7 @@
 					<i class="fa-solid fa-suitcase"></i>				
 					<span>Caso</span>
 
-				</a
+				</a>
 			
 			</li> 
 
@@ -41,7 +41,7 @@
 					<i class="fa-solid fa-gears"></i>
 					<span>Revisar</span>
 
-				</a
+				</a>
 			
 			</li> 
 
@@ -52,18 +52,18 @@
 					<i class="fa-solid fa-user-gear"></i>
 					<span>Tecnico</span>
 
-				</a
+				</a>
 			
 			</li> 
 
-			</li> 
+			
 
 			<li>			
 				<a href="usuario">
 					<i class="fa-solid fa-user"></i>
 					<span>Usuario</span>
 
-				</a
+				</a>
 			
 			</li> 
 
@@ -74,7 +74,7 @@
 					<span>Factura</span>								
 					<i class="fa fa-angle-left pull-right"></i>
 
-				</a
+				</a>
 			
 			</li> 
 

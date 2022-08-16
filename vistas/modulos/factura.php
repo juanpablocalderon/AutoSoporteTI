@@ -7,7 +7,7 @@
         <small>Factura</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i>Factura</a></li>
+        <li><a href="#"><i class="fa fa-dashboard"></i>Inicio</a></li>
                 <li class="active">Factura</li>
       </ol>
     </section>

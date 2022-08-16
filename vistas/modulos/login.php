@@ -1,4 +1,4 @@
-<div>id=back</div>
+<div id="back"></div>
 
 <div class="login-box">
 
@@ -33,12 +33,22 @@
           </div>
         </div>
 
-        <!-- /.col -->
+       
         <div class="col-xs-4">
           <button type="submit" class="btn btn-primary btn-block btn-flat">Ingresar</button>
         </div>
-        <!-- /.col -->
+        
       </div>
+
+      <?php 
+
+        $login = new ControladorUsuario();
+        $login -> ctrIngresoUsuario();
+
+
+       ?>
+
+
     </form>
 
   </div>
