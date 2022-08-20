@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -91,7 +94,8 @@
        $_GET['ruta'] == "revisar" ||
        $_GET['ruta'] == "tecnico" ||
        $_GET['ruta'] == "usuario" ||
-       $_GET['ruta'] == "factura"  ) {
+       $_GET['ruta'] == "factura" ||
+       $_GET['ruta'] == "salir"){
 
       include"modulos/".$_GET['ruta'].".php";
 

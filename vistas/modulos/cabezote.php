@@ -46,6 +46,7 @@
    					<img src="vistas/img/plantilla/anonimo.png" class="user-image">
    					<span class="hidden-xs">Usuario Administrador</span>
    				</a>
+   			
 		<!-- dropdown-toggle -->
 
 		    <ul class="dropdown-menu">
@@ -54,7 +55,7 @@
 
 		    		<div class="pull-right">
 
-		    			<a href="" class="btn btn-default btn-flat">Salir</a>    			
+		    			<a href="salir" class="btn btn-default btn-flat">Salir</a>    			
 
 		    		</div>
 		    	</li>

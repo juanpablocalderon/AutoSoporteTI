@@ -20,8 +20,20 @@ class ControladorUsuario{
 
           $respuesta = ModeloUsuarios::MdlMostrarUsuarios($tabla, $item, $valor);
 
-          var_dump($respuesta["usuario"]);
+          if($respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"] == $_POST["ingPassword"]){
 
+             $_SESSION["iniciarsesion"] = "ok";
+
+             echo '<script>
+
+                  window.location = "inicio";
+
+             </script>';            
+
+          }else{
+
+              echo '<br><div class="alert alert-danger">Error al ingresar al sistema, vuelve a intentarlo </div>';
+          }
              			  				
   			}
   		}	
