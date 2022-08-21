@@ -16,6 +16,16 @@
 			
 			</li> 
 
+			<li>			
+				<a href="usuario">
+					<i class="fa-solid fa-user"></i>
+					<span>Usuario</span>
+
+				</a>
+			
+			</li> 
+
+
 
 			<li>
 				<a href="cliente">
@@ -58,15 +68,7 @@
 
 			
 
-			<li>			
-				<a href="usuario">
-					<i class="fa-solid fa-user"></i>
-					<span>Usuario</span>
-
-				</a>
 			
-			</li> 
-
 			<li>			
 				<a href="factura">
 

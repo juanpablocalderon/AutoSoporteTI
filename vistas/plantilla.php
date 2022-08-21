@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +15,7 @@
    <link rel="icon" href="vistas/img/plantilla/logo_sencillo.png">
 
     <!--===========================================
-  =            PRLUGINS DE CSS            =
+  =            PLUGINS DE CSS            =
   ============================================-->
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -32,6 +38,14 @@
       <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
+  <!-- DataTables -->
+  <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+
+
+
+
+
+
 
   <!--===========================================
   =            PRLUGINS DE JAVASCRIP            =
@@ -52,6 +66,17 @@
 
  <!-- Fontawesome -->
  <script src="https://kit.fontawesome.com/5cd8bf78dd.js" crossorigin="anonymous"></script>
+
+  
+  <!-- DataTables -->
+ <script src="vistas/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+ <script src="vistas/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+
+
+ <!-- SweetAlert2 -->
+ <script src="vistas/plugins/SweetAlert2/sweetalert2.all.min.js"></script>
+
+
 
  
  <!--====  CUEPO DEL DOCUMENTO   ====-->
@@ -85,13 +110,15 @@
   =          INICIO       =
   ================================*/
   if(isset($_GET['ruta'])){
-    if($_GET['ruta'] == "inicio" ||
+    if($_GET['ruta'] == "inicio"  ||
        $_GET['ruta'] == "cliente" ||
-       $_GET['ruta'] == "caso" ||
+       $_GET['ruta'] == "caso"    ||
        $_GET['ruta'] == "revisar" ||
        $_GET['ruta'] == "tecnico" ||
        $_GET['ruta'] == "usuario" ||
-       $_GET['ruta'] == "factura"  ) {
+       $_GET['ruta'] == "factura" ||  
+       $_GET['ruta'] == "salir" ){
+
 
       include"modulos/".$_GET['ruta'].".php";
 

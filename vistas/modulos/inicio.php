@@ -7,7 +7,7 @@
         <small>Panel De Control</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
         <li><a href="#">Examples</a></li>
         <li class="active">Blank page</li>
       </ol>
