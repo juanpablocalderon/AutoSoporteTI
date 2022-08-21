@@ -1,9 +1,14 @@
 <?php
+<<<<<<< HEAD
 
 session_start();
 
 ?>
 
+=======
+session_start();
+?>
+>>>>>>> d30e6005214405724ac3f4bbb54223d188469e90
 <!DOCTYPE html>
 <html>
 <head>
@@ -116,9 +121,14 @@ session_start();
        $_GET['ruta'] == "revisar" ||
        $_GET['ruta'] == "tecnico" ||
        $_GET['ruta'] == "usuario" ||
+<<<<<<< HEAD
        $_GET['ruta'] == "factura" ||  
        $_GET['ruta'] == "salir" ){
 
+=======
+       $_GET['ruta'] == "factura" ||
+       $_GET['ruta'] == "salir"){
+>>>>>>> d30e6005214405724ac3f4bbb54223d188469e90
 
       include"modulos/".$_GET['ruta'].".php";
 

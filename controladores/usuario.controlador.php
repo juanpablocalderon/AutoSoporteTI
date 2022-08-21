@@ -6,7 +6,7 @@ class ControladorUsuario{
   =    INGRESO DE USUARIOS       =
   ============================================--*/
 
-    public function ctrIngresoUsuario(){
+    static public function ctrIngresoUsuario(){
 
   		if(isset($_POST['ingUsuario'])){
 
@@ -20,7 +20,11 @@ class ControladorUsuario{
 
           $respuesta = ModeloUsuarios::MdlMostrarUsuarios($tabla, $item, $valor);
 
+<<<<<<< HEAD
              if($respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"] == $_POST["ingPassword"]){
+=======
+          if($respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"] == $_POST["ingPassword"]){
+>>>>>>> d30e6005214405724ac3f4bbb54223d188469e90
 
              $_SESSION["iniciarsesion"] = "ok";
 
@@ -33,7 +37,12 @@ class ControladorUsuario{
           }else{
 
               echo '<br><div class="alert alert-danger">Error al ingresar al sistema, vuelve a intentarlo </div>';
+<<<<<<< HEAD
           }             			  				
+=======
+          }
+             			  				
+>>>>>>> d30e6005214405724ac3f4bbb54223d188469e90
   			}
   		}	
   	}

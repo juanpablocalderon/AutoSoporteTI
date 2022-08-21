@@ -46,6 +46,7 @@
    					<img src="vistas/img/plantilla/anonimo.png" class="user-image">
    					<span class="hidden-xs">Usuario Administrador</span>
    				</a>
+   			
 		<!-- dropdown-toggle -->
 
 		    <ul class="dropdown-menu">
