@@ -1,14 +1,7 @@
 <?php
-<<<<<<< HEAD
-
-session_start();
-
-?>
-
-=======
 session_start();
 ?>
->>>>>>> d30e6005214405724ac3f4bbb54223d188469e90
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,6 +39,8 @@ session_start();
   <!-- DataTables -->
   <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
 
+  
+
 
 
 
@@ -77,12 +72,10 @@ session_start();
  <script src="vistas/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
  <script src="vistas/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 
-
  <!-- SweetAlert2 -->
- <script src="vistas/plugins/SweetAlert2/sweetalert2.all.min.js"></script>
+  <script src="vistas/plugins/sweetalert2/sweetalert2.all.js"></script>
 
-
-
+ 
  
  <!--====  CUEPO DEL DOCUMENTO   ====-->
  
@@ -121,14 +114,10 @@ session_start();
        $_GET['ruta'] == "revisar" ||
        $_GET['ruta'] == "tecnico" ||
        $_GET['ruta'] == "usuario" ||
-<<<<<<< HEAD
        $_GET['ruta'] == "factura" ||  
-       $_GET['ruta'] == "salir" ){
-
-=======
        $_GET['ruta'] == "factura" ||
        $_GET['ruta'] == "salir"){
->>>>>>> d30e6005214405724ac3f4bbb54223d188469e90
+
 
       include"modulos/".$_GET['ruta'].".php";
 
@@ -169,6 +158,6 @@ session_start();
 </div>
 <!-- ./wrapper -->
 
-<script src="vistas/js/plantilla.js"></scrip>script
+<script src="vistas/js/plantilla.js"></script>
 </body>
 </html>

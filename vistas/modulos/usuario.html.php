@@ -245,15 +245,6 @@
 
       </div>
 
-      <!-- ?php -->
-
-        <!-- $crearUsuario = new ControladorUsuarios(); -->
-        <!-- $crearUsuario -> ctrCrearUsuario(); -->
-
-
-      <!-- ?> -->
-
-
       
     
 

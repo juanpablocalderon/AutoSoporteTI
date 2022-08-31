@@ -10,86 +10,81 @@ class ControladorUsuario{
 
   		if(isset($_POST['ingUsuario'])){
 
-        if(preg_match('/^[a-zA-Z0-9]+$/', $_POST["ingUsuario"]) &&
-           preg_match('/^[a-zA-Z0-9]+$/', $_POST["ingPassword"])){
+            if(preg_match('/^[a-zA-Z0-9]+$/', $_POST["ingUsuario"]) &&
+                preg_match('/^[a-zA-Z0-9]+$/', $_POST["ingPassword"])){
 
-          $tabla = "usuarios";
+                $tabla = "usuarios";
 
-          $item = "usuario";
-          $valor = $_POST["ingUsuario"];
+                $item = "usuario";
+                $valor = $_POST["ingUsuario"];
 
-          $respuesta = ModeloUsuarios::MdlMostrarUsuarios($tabla, $item, $valor);
+                $respuesta = ModeloUsuarios::MdlMostrarUsuarios($tabla, $item, $valor);
 
-<<<<<<< HEAD
-             if($respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"] == $_POST["ingPassword"]){
-=======
-          if($respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"] == $_POST["ingPassword"]){
->>>>>>> d30e6005214405724ac3f4bbb54223d188469e90
 
-             $_SESSION["iniciarsesion"] = "ok";
+                if($respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"] == $_POST["ingPassword"]){
 
-             echo '<script>
+                    $_SESSION["iniciarsesion"] = "ok";
 
-                  window.location = "inicio";
+                    echo '<script>
 
-             </script>';            
+                            window.location = "inicio";
 
-          }else{
+                    </script>';    
 
-              echo '<br><div class="alert alert-danger">Error al ingresar al sistema, vuelve a intentarlo </div>';
-<<<<<<< HEAD
-          }             			  				
-=======
-          }
-             			  				
->>>>>>> d30e6005214405724ac3f4bbb54223d188469e90
-  			}
-  		}	
-  	}
+
+
+                }else{
+
+                    echo '<br><div class="alert alert-danger">Error al ingresar al sistema, vuelve a intentarlo </div>';
+
+                }  
+            }
+        }
+  	}	
+
  
 
 /*--===========================================
   =    REGISTRO DE USUARIOS       =
   ============================================--*/
 
-  static public function ctrCrearUsuario(){
+    static public function ctrCrearUsuario(){
 
-    if(isset($_POST["nuevoUsuario"])){
+        if(isset($_POST["nuevoUsuario"])){
 
-        if(preg_match('/^[a-zA-Z0-9ñÑáéíóú]+$/', $_POST["nuevoNombre"]) &&
-           preg_match('/^[a-zA-Z0-9]+$/', $_POST["nuevoUsuario"]) &&
-           preg_match('/^[a-zA-Z0-9]+$/', $_POST["nuevoPassword"])){
+            if(preg_match('/^[a-zA-Z0-9ñÑáéíóú]+$/', $_POST["nuevoNombre"]) &&
+               preg_match('/^[a-zA-Z0-9]+$/', $_POST["nuevoUsuario"]) &&
+               preg_match('/^[a-zA-Z0-9]+$/', $_POST["nuevoPassword"])){
 
-           }else{
+            }else{
 
-            echo '<script> 
+                echo '<script> 
 
-            swal({
+                    swal({
 
-            type: "error" ,
-            title: " ! El usuario no puede ir vacio o llevar caracteres especiales",
-            showConfirmButton: true,
-            confimButtomText: "Cerrar",
-            closeOnConfirm: false
-
-
-            }).then((result)=>{
+                        type: "error" ,
+                        tittle: " ! El usuario no puede ir vacio o llevar caracteres especiales",
+                        showConfirmButton: true,
+                        confimButtomText: "Cerrar",
+                        closeOnConfirm: false
 
 
-                if(result.value){
-
-                    window.location = "usuarios"
-
-                }
-            });
+                    }).then((result)=>{
 
 
-            </script>';
+                        if(result.value){
 
-     }
+                            window.location = "usuarios"
+
+                        }
+                    });
+
+                </script>';
+
+            }
+
+        }
 
     }
 
-  }
-
- }
+}

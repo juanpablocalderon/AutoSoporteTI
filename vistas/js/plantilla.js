@@ -11,8 +11,5 @@
 
   $(".tablas").DataTable();
 
-  
 
-$('.sidebar-menu').ready(function () {
-    $('tablas').DataTable();
-});
+
