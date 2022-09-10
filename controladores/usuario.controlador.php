@@ -60,7 +60,7 @@ class ControladorUsuario{
 
                 echo '<script> 
 
-                  new  Swal.fire({
+                    Swal.fire({
 
                         icon: "error" ,
                         title: " ! El usuario no puede ir vacio o llevar caracteres especiales",
