@@ -39,14 +39,12 @@ session_start();
   <!-- DataTables -->
   <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
 
+  <!-- Sweetalert2 -->
+  <!-- <link rel="stylesheet" href="vistas/plugins/Sweetalert2/sweetalert2.min.css"> -->
+  <!-- <link rel="stylesheet" href="vistas/plugins/Sweetalert2/sweetalert2.min.css"> -->
+
   
-
-
-
-
-
-
-
+  
   <!--===========================================
   =            PRLUGINS DE JAVASCRIP            =
   ============================================-->
@@ -73,9 +71,10 @@ session_start();
  <script src="vistas/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 
  <!-- SweetAlert2 -->
-  <script src="vistas/plugins/sweetalert2/sweetalert2.all.js"></script>
 
- 
+  <script type="text/javascript" src="vistas/plugins/Sweetalert2/sweetalert2.all.js"></script>
+  
+
  
  <!--====  CUEPO DEL DOCUMENTO   ====-->
  
@@ -159,5 +158,6 @@ session_start();
 <!-- ./wrapper -->
 
 <script src="vistas/js/plantilla.js"></script>
+<script src="vistas/js/usuarios.js"></script>
 </body>
 </html>

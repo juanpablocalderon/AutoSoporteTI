@@ -8,7 +8,7 @@
       </h1>
       <ol class="breadcrumb">
         <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
-                <li class="active">Usuario</li>
+            <li class="active">Usuario</li>
       </ol>
     </section>
 
@@ -41,6 +41,7 @@
                   <th>Nombre</th>
                   <th>Usuario</th>
                   <th>Telefono</th>
+                  <th>Foto</th>
                   <th>Cargo</th>
                   <th>Id Caso</th>
                   <th>Acciones</th>
@@ -59,7 +60,8 @@
               <td>pepohijbjhblkn</td>
               <td>admin</td>
               <td>3014962783</td>
-              <td>Administrador</t>
+              <td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>
+              <td>Administrador</td>
               <td>00001</td>
               <td>
                 
@@ -80,6 +82,7 @@
               <td>Isabella Calderon</td>
               <td>admin</td>
               <td>3014465168</td>
+              <td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>
               <td>user</t>
               <td>00002</td>
               <td>
@@ -101,6 +104,7 @@
               <td>Constanza Gomez</td>
               <td>admin</td>
               <td>301471654</td>
+              <td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>
               <td>temp</t>
               <td>00003</td>
               <td>
@@ -148,13 +152,13 @@
               =CABEZA DEL MODAL=
            ============================================--> 
 
-      <div class="modal-header" style="background: #3c8dbc;color: white;" >
+    <div class="modal-header" style="background: #3c8dbc;color: white;" >
 
         <button type="button" class="close" data-dismiss="modal">&times;</button>
 
         <h4 class="modal-title">Agregar Usuario</h4>
 
-      </div>
+    </div>
 
       <div class="modal-body">
 
@@ -165,25 +169,25 @@
            ============================================--> 
 
 
-          <div class="form-group">
+        <div class="form-group">
 
-             <div class="input-group">
+          <div class="input-group">
 
               <span class="input-group-addon"><i class="fa fa-users"></i></span>
 
               <input type="text" class="form-control input-lg" name="nuevoNombre" placeholder="Ingresar Nombre" required>
 
-            </div>
-
           </div>
+
+        </div>
 
           <!--===========================================
                   =MODAL AGREGAR USUARIO=
              ============================================-->
 
-          <div class="form-group">
+        <div class="form-group">
 
-             <div class="input-group">
+            <div class="input-group">
 
               <span class="input-group-addon"><i class="fa fa-key"></i></span>
 
@@ -191,50 +195,69 @@
 
             </div>
 
-          </div>
+        </div>
 
           <!--===========================================
                   =MODAL AGREGAR USUARIO=
              ============================================-->
 
-           <div class="form-group">
+        <div class="form-group">
 
-             <div class="input-group">
+            <div class="input-group">
 
               <span class="input-group-addon"><i class="fa fa-lock"></i></span>
 
-              <input type="password"class="form-control input-lg" name="nuevoPasword" placeholder="Ingresar contraseña" required>
+              <input type="password"class="form-control input-lg" name="nuevoPassword" autocomplete="on" placeholder="Ingresar contraseña" required>
 
             </div>
 
-          </div>          
+        </div>  
 
-          </div>
-          
+        </div>
 
-           <!--===========================================
+
+        <!--===========================================
                   =SELECCIONAR PERFIL=
-             ============================================-->
+         ============================================-->        
 
-
+          
           <div class="form-group">
 
             <div class="input-group">
 
-            <span class="input-group-addon"><i class="fa fa-users"></i></span>
+              <span class="input-group-addon"><i class="fa fa-users"></i></span>
 
-            <select class="form-control input-lg" name="nuevoPerfil">
+                <select class="form-control input-lg" name="nuevoPerfil">
 
-              <option value="">Seleccionar Perfil</option>
-              <option value="Administrador">Administrador</option>
-              <option value="temp">Temporal</option>   
-              <option value="user">Usuario</option> 
+                  <option value="">Seleccionar Perfil</option>
+                  <option value="Administrador">Administrador</option>
+                  <option value="temp">Temporal</option>   
+                  <option value="user">Usuario</option> 
 
-            </select>
+                </select>
 
-        </div>       
+            </div>       
 
-      </div>
+          </div>
+
+
+           <!--===========================================
+                  =SUBIR FOTO=
+         ============================================-->        
+
+          
+          <div class="form-group">
+
+            <div class="panel">SUBIR FOTO</div>
+
+            <input type="file" class="nuevaFoto" id="nuevaFoto" name="nuevaFoto">
+
+            <p class="help-block">Peso maximo de la foto 20mb</p>
+
+            <img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail previsualizar" width="100px">  
+            
+
+          </div>
 
       </div>
 
