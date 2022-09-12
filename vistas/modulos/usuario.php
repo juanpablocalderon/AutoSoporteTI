@@ -198,7 +198,7 @@
         </div>
 
           <!--===========================================
-                  =MODAL AGREGAR USUARIO=
+                  =MODAL AGREGAR CONTRASEÑA=
              ============================================-->
 
         <div class="form-group">

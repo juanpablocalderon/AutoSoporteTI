@@ -56,6 +56,91 @@ class ControladorUsuario{
                preg_match('/^[a-zA-Z0-9]+$/', $_POST["nuevoUsuario"]) &&
                preg_match('/^[a-zA-Z0-9]+$/', $_POST["nuevoPassword"])){
 
+                /*--===========================================
+                        =    VALIDAR IMAGEN       =
+                 ============================================--*/
+
+                $ruta = "";
+
+                if(isset($_FILES["nuevaFoto"]["tmp_name"])){
+
+
+                    list($ancho,$alto) = getimagesize($_FILES["nuevaFoto"]["tmp_name"]);
+
+                    $nuevoAncho = 500;
+                    $nuevoAlto = 500;
+
+                /*--===========================================
+                        =    DIRECTORIO PARA GUARDAR FOTO      =
+                 ============================================--*/
+
+                    $directorio = "vistas/img/usuarios/".$_POST["nuevoUsuario"];
+
+                    mkdir($directorio, 0755);
+
+
+                /*--===========================================
+                = DE ACUERDO AL TIPO DE IMAGEN SE APLICAN LAS FUNCIONES POR DEFECTO PHP      =
+                 ============================================--*/
+
+
+                 if($_FILES["nuevaFoto"]["type"]== "image/jpg"){
+
+                    /*--===========================================
+                        =   GUARDAR LA IMAGENEN EL DIRECTORIO   =
+                    ============================================--*/
+
+                    $aleatoreo = mt_rand(100,999);
+
+                    $ruta = "vistas/img/usuarios".$_POST["nuevoUsuario"]."/".$aleatoreo.".jpg";
+
+                    $origen = imagecreatefromjpeg($_FILES["nuevaFoto"]["tmp_name"]);
+
+                    $destino = imagecreatetruecolor($nuevoAncho,$nuevoAlto);
+
+                    imagecopyresized($destino, $origen, 0, 0, 0, 0, $nuevoAncho, $nuevoAlto, $ancho, $alto);
+
+                    imagejpeg($destino, $ruta);
+
+                 }
+
+                 if($_FILES["nuevaFoto"]["type"]== "image/png"){
+
+                    /*--===========================================
+                        =   GUARDAR LA IMAGENEN EL DIRECTORIO   =
+                    ============================================--*/
+
+                    $aleatoreo = mt_rand(100,999);
+
+                    $ruta = "vistas/img/usuarios".$_POST["nuevoUsuario"]."/".$aleatoreo.".png";
+
+                    $origen = imagecreatefrompgn($_FILES["nuevaFoto"]["tmp_name"]);
+
+                    $destino = imagecreatetruecolor($nuevoAncho,$nuevoAlto);
+
+                    imagecopyresized($destino, $origen, 0, 0, 0, 0, $nuevoAncho, $nuevoAlto, $ancho, $alto);
+
+                    imagepng($destino, $ruta);
+
+                }
+                    
+                } 
+
+                $tabla ="usuarios";
+
+                $datos = array("nombre"=> $_POST["nuevoNombre"],
+                                "usuario"=> $_POST["nuevoUsuario"],
+                                "password"=> $_POST["nuevoPassword"],
+                                "perfil"=> $_POST["nuevoPerfil"],
+                                "foto" => $ruta);
+
+                $respuesta = ModeloUsuarios::MdlMostrarUsuarios($tabla, $datos);
+
+            }
+
+                if ($respuesta == "ok"){
+
+
             }else{
 
                 echo '<script> 
@@ -88,3 +173,4 @@ class ControladorUsuario{
     }
 
 }
+
